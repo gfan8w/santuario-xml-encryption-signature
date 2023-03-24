@@ -1,0 +1,66 @@
+<PurchaseOrder xmlns="urn:example:po">
+  <Items>
+    <Item Code="001-001-001" Quantity="1">
+      spade
+    </Item>
+    <Item Code="001-001-002" Quantity="1">
+      shovel
+    </Item>
+  </Items>
+  <ShippingAddress>
+    Dig PLC, 1 First Ave, Dublin 1, Ireland
+  </ShippingAddress>
+  <PaymentInfo Id="4496a3f4-1fdd-4e03-a3d0-25561477fa94">
+    <BillingAddress>
+      Dig PLC, 1 First Ave, Dublin 1, Ireland
+    </BillingAddress>
+    <CreditCard Type="Amex">
+      <Name>Foo B Baz</Name>
+      <Number>1234 567890 12345</Number>
+      <Expires Month="1" Year="2005"></Expires>
+    </CreditCard>
+  </PaymentInfo>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+      <ds:Reference URI="#4496a3f4-1fdd-4e03-a3d0-25561477fa94">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+        <ds:DigestValue>Vol3F7ZDR4MUtotUtUpohbLgm3E=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      E7eEUccSOsv7RMZvY1ra/uQ5azVYHeHumc/YQ+0mkotB5MH+zj/qG/kpT3pz52+/1MkFlRPBTBu/&#xD;
+      qR70eyMMC41KAj/fX8j6sCtmEHOitdRo4duJaXvUQdLwHV/T0MHfgdB5a+G2hECLbkZPgtx3qvt/&#xD;
+      QzkOUBCOR7qbZtjkts5X2hDzXxv0B26grjSeYkQ0yf2YHIHTXb2SPF1TIOLafT3stLHzdL4E0e76&#xD;
+      x2HNSFddZ58500voKp02ezTMWw5WqWu8J4DFYeA0uyz572jQW52ckgm79kIv32M1UWJRUey5BOno&#xD;
+      /4nZ7LSNnTbxu+7l866QkW3EXhEuPwB7AqjP2g==
+    </ds:SignatureValue>
+    <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:X509Data>
+        <ds:X509Certificate>
+          MIIDqjCCAxOgAwIBAgIBHzANBgkqhkiG9w0BAQsFADBmMQswCQYDVQQGEwJERTEPMA0GA1UECBMG&#xD;
+          QmF5ZXJuMQ8wDQYDVQQHEwZNdW5pY2gxDTALBgNVBAoTBEhvbWUxFTATBgNVBAsTDEFwYWNoZSBX&#xD;
+          U1M0SjEPMA0GA1UEAxMGV2VybmVyMB4XDTE1MDkxMDEzMjEyMloXDTI1MDkwNzEzMjEyMlowUzEL&#xD;
+          MAkGA1UEBhMCSUUxETAPBgNVBAgTCExlaW5zdGVyMQ8wDQYDVQQHEwZEdWJsaW4xDzANBgNVBAoT&#xD;
+          BkFwYWNoZTEPMA0GA1UEAxMGQ2xpZW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA&#xD;
+          jeP2hF/KOv8Pw/++n9bAa0DxKFzyLvlcAciBgv1E01cCyUwn5X0v8nT9gIdjXBi6Y6PvSCs2GqcA&#xD;
+          zo82yzIjlcDmocXt/2vBkezwh6Ow2xoXItzXD+I6KlhpH8gl4xXd35N0z+88m4SEclncm//l3sQH&#xD;
+          P6CMG9O4H91A+0DXzTkQHzs2PEg13ONMOVbg5P85ceZ+VTBjd3BkqC0mZDB6Ovo6Xt06tVS/S4rF&#xD;
+          R0L9mtyxZ+v/Psd8TYAIk3wlz1e1wm+dobp1YkOPgvv08r8ROVnWC0pRZquCPQUou6r50LseRZWE&#xD;
+          o9MGN8kt4sYcLCaJbF3fsTvKYi6InWyczv2JSQIDAQABo4H2MIHzMAkGA1UdEwQCMAAwLAYJYIZI&#xD;
+          AYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBQsRXQjSEq1&#xD;
+          PetSTIekkXnMBtntGTCBmAYDVR0jBIGQMIGNgBRWF+/2a4tZ/iMZaN54wOFNZ33QZqFqpGgwZjEL&#xD;
+          MAkGA1UEBhMCREUxDzANBgNVBAgTBkJheWVybjEPMA0GA1UEBxMGTXVuaWNoMQ0wCwYDVQQKEwRI&#xD;
+          b21lMRUwEwYDVQQLEwxBcGFjaGUgV1NTNEoxDzANBgNVBAMTBldlcm5lcoIJAI3hLAppEXfSMA0G&#xD;
+          CSqGSIb3DQEBCwUAA4GBAKZXwqAplMzutyC8jIUzFN/DfQOAuZ8ExLBIUxW51KSzxxL+kfydq4HF&#xD;
+          otRC7PZ3bYEkXYN7deUYoq6yFO0AAWvagBbxdzRYDPRCwpKe+4jn8VLGtjkEyLSsMiiaNiOuMx8q&#xD;
+          WxvV1sA9KioHvZDFVP+0QqSc1ZytEPOKasdViUU9
+        </ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ds:Signature>
+</PurchaseOrder>
